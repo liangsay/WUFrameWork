@@ -1,0 +1,16 @@
+PODS:
+  - WUFrameWork (0.1.0)
+
+DEPENDENCIES:
+  - WUFrameWork (from `../`)
+
+EXTERNAL SOURCES:
+  WUFrameWork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WUFrameWork: 98d6b423eeb67872103df414106b9dbbe626852e
+
+PODFILE CHECKSUM: d20c24fdfdd80dac8284a23f1ce6c802f2a39e97
+
+COCOAPODS: 1.2.1

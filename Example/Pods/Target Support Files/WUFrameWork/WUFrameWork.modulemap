@@ -1,0 +1,6 @@
+framework module WUFrameWork {
+  umbrella header "WUFrameWork-umbrella.h"
+
+  export *
+  module * { export * }
+}

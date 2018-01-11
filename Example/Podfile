@@ -1,0 +1,6 @@
+use_frameworks!
+target 'WUFrameWork_Tests' do
+  pod 'WUFrameWork', :path => '../'
+  
+  
+end

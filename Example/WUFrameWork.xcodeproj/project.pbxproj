@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		1B8D364591A67B892A089BF6 /* Pods_WUFrameWork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0B2AFFFD27638A6CB39ADF /* Pods_WUFrameWork_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7F4B3A06204010160025A53A /* DESC.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B3A05204010160025A53A /* DESC.rtfd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D0B2AFFFD27638A6CB39ADF /* Pods_WUFrameWork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WUFrameWork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F65B7F7AA3A9BF8F32864BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2F65B7F7AA3A9BF8F32864BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* WUFrameWork_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WUFrameWork_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		790625917AFA4BD8AAEDE6A7 /* WUFrameWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WUFrameWork.podspec; path = ../WUFrameWork.podspec; sourceTree = "<group>"; };
+		790625917AFA4BD8AAEDE6A7 /* WUFrameWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WUFrameWork.podspec; path = ../WUFrameWork.podspec; sourceTree = "<group>"; };
 		7C8B0483413C04FA2194D22E /* Pods-WUFrameWork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUFrameWork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WUFrameWork_Tests/Pods-WUFrameWork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C653C95793ADA3E1A7DE0E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7F4B3A05204010160025A53A /* DESC.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = DESC.rtfd; sourceTree = "<group>"; };
+		8C653C95793ADA3E1A7DE0E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FBCD46F994458D6067000CBF /* Pods-WUFrameWork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUFrameWork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WUFrameWork_Tests/Pods-WUFrameWork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				790625917AFA4BD8AAEDE6A7 /* WUFrameWork.podspec */,
 				8C653C95793ADA3E1A7DE0E7 /* README.md */,
 				2F65B7F7AA3A9BF8F32864BD /* LICENSE */,
+				7F4B3A05204010160025A53A /* DESC.rtfd */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -131,10 +134,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -165,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4B3A06204010160025A53A /* DESC.rtfd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,13 +177,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WUFrameWork_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A2A47205254AE4ADA0E4E2E8 /* [CP] Embed Pods Frameworks */ = {
@@ -192,9 +195,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WUFrameWork_Tests/Pods-WUFrameWork_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/WUFrameWork/WUFrameWork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WUFrameWork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -363,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

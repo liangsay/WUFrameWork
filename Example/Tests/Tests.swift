@@ -2,6 +2,7 @@ import UIKit
 import XCTest
 import WUFrameWork
 
+
 class Tests: XCTestCase {
     
     override func setUp() {
@@ -11,6 +12,10 @@ class Tests: XCTestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        var str:String = "123.123"
+        
+        str = str.formatMoneyWithNum()
+        
         super.tearDown()
     }
     

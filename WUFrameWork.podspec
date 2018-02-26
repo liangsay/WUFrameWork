@@ -34,9 +34,9 @@ TODO: 本次更新加入SnapKit和BaseViewAdd long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 #表示源文件的路径，这个路径是相对podspec文件而言的。（这属性下面单独讨论）
-s.source_files = "WUFrameWork", "WUFrameWork/**/*.{h,m,swift}"
-#  s.source_files = 'WUFrameWork/Classes/**/*'
-# s.source_files = 'WUFrameWork/ThirdLib/**/*'
+#s.source_files = "WUFrameWork", "WUFrameWork/**/*.{h,m,swift}"
+s.source_files = 'WUFrameWork/Classes/**/*'
+s.source_files = 'WUFrameWork/Category/**/*'
 #s.source_files = 'WUFrameWork/WUBaseView/**/*'
   
   # s.resource_bundles = {
@@ -47,7 +47,7 @@ s.source_files = "WUFrameWork", "WUFrameWork/**/*.{h,m,swift}"
 #需要用到的frameworks，不需要加.frameworks后缀。（这个没有用到也可以不填）
   s.frameworks = 'UIKit', 'WebKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'SnapKit', '= 3.0.2'
+  s.dependency 'SnapKit', '~> 4.0.0'
 #--swift-version=3.2
 #s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 end

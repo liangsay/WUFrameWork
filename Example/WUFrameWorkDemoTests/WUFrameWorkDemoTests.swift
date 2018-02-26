@@ -1,9 +1,15 @@
-import UIKit
+//
+//  WUFrameWorkDemoTests.swift
+//  WUFrameWorkDemoTests
+//
+//  Created by liujinliang on 2018/2/26.
+//  Copyright © 2018年 CocoaPods. All rights reserved.
+//
+
 import XCTest
-import WUFrameWork
+@testable import WUFrameWorkDemo
 
-
-class Tests: XCTestCase {
+class WUFrameWorkDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -12,21 +18,17 @@ class Tests: XCTestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        var str:String = "123.123"
-        
-        str = str.formatMoneyWithNum()
-        
         super.tearDown()
     }
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure() {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

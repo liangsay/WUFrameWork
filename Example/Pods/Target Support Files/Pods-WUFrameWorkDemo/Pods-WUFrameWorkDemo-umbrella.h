@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_WUFrameWork_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_WUFrameWork_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_WUFrameWorkDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WUFrameWorkDemoVersionString[];
 

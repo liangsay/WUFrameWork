@@ -18,17 +18,14 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": [
-    "WUFrameWork",
-    "WUFrameWork/**/*.{h,m,swift}"
-  ],
+  "source_files": "WUFrameWork/Category/**/*",
   "frameworks": [
     "UIKit",
     "WebKit"
   ],
   "dependencies": {
     "SnapKit": [
-      "= 3.0.2"
+      "~> 4.0.0"
     ]
   }
 }

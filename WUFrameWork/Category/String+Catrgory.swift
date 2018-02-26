@@ -8,11 +8,10 @@
 //必须加public才能被外部引用
 public extension String {
     
-    //MARK: --格式化金额，千分位
+    
     /**
-     *  @author liujinliang, 16-12-28 14:12:49
-     *
      *  @brief 格式化金额，千分位
+     *  @author liujinliang, 16-12-28 14:12:49
      *
      enum{
      
@@ -37,6 +36,7 @@ public extension String {
      *
      *  @since <#1.1.0#>
      */
+    //MARK: --格式化金额，千分位
     func formatMoneyWithNum() -> String {
         if self == "" || self.isEmpty {
             return "0"
@@ -47,5 +47,20 @@ public extension String {
         let num = NSNumber(floatLiteral: Double(self)!)
         let string = format.string(from: num)
         return string!
+    }
+    
+    //MARK: --判断是否为整数
+    /// 判断是否为整数
+    ///
+    /// - Parameter string: 空
+    /// - Returns: book=l
+    func isPurnInt() -> Bool {
+        
+        let scan: Scanner = Scanner(string: self)
+        
+        var val:Int = 0
+        
+        return scan.scanInt(&val) && scan.isAtEnd
+        
     }
 }

@@ -1,7 +1,7 @@
 PODS:
-  - SnapKit (3.0.2)
+  - SnapKit (4.0.0)
   - WUFrameWork (0.1.1):
-    - SnapKit (= 3.0.2)
+    - SnapKit (~> 4.0.0)
 
 DEPENDENCIES:
   - WUFrameWork (from `../`)
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
-  WUFrameWork: c446d9ee3a601abaeadda44e1825a12b84f7400e
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  WUFrameWork: 3e18df593c691b99d0380b0abeb328cb831141c2
 
-PODFILE CHECKSUM: e557cf1948e22286c951ef2e55ea1bf6191d4aa3
+PODFILE CHECKSUM: 8d173e69f0f33b1d9374c2318dbaf4aa472624a0
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.4.0

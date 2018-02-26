@@ -1,5 +1,6 @@
+platform :ios ,'8.0'
 use_frameworks!
-target 'WUFrameWork_Tests' do
+target 'WUFrameWorkDemo' do
   pod 'WUFrameWork', :path => '../'
 #  pod 'WUFrameWork',:git => 'https://github.com/liangsay/WUFrameWork.git'
 #  pod 'SnapKit', '~> 3.0.2'
